@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TaskHelperClient</string>
+    <string name="bind">bind</string>
+    <string name="unBind">unBind</string>
+    <string name="call">call</string>
+    <string name="description">description</string>
+    <string name="name">Name Of Task Group</string>
+</resources>

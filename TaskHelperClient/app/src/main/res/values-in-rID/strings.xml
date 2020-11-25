@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TaskHelperClient</string>
+    <string name="bind">ikat</string>
+    <string name="unBind">lepas ikatan</string>
+    <string name="call">panggil</string>
+    <string name="description">deskripsi</string>
+    <string name="name">Nama Task Group</string>
+</resources>

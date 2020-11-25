@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TaskHelper</string>
+    <string name="NewTaskGroup">New Task Group</string>
+    <string name="TaskGroupsText">Task Groups</string>
+    <string name="NewTask">New Task</string>
+    <string name="newTaskButton">Add New Task</string>
+    <string name="DateText">Date</string>
+    <string name="DescriptionText">Description</string>
+    <string name="SubmitNewTaskButton">Submit New Task</string>
+    <string name="AddTaskText">Add New Task</string>
+    <string name="buttonLocalFile">Browse Local Files</string>
+    <string name="newTaskFileButton" >Add New Task Step</string>
+    <string name="addTaskGroup">Add Task Group</string>
+    <string name="submitNewTaskGroup">Submit New Task Group</string>
+    <string name="steps">Steps</string>
+    <string name="submitTaskSteps">Submit Task Step</string>
+    <string name="addTaskStep">Add Task Step</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="NewTaskGroup">Task Grup Baru</string>
+    <string name="TaskGroupsText">Sejumlah Grup Task</string>
+    <string name="NewTask">Task Baru</string>
+    <string name="newTaskButton">Tambahkan Task Baru</string>
+    <string name="DateText">Tanggal</string>
+    <string name="DescriptionText">Deskripsi</string>
+    <string name="SubmitNewTaskButton">Kumpulkan Informasi Task Baru</string>
+    <string name="AddTaskText">Tambahkan Task Baru</string>
+    <string name="buttonLocalFile">Cari Berkas Lokal</string>
+    <string name="newTaskFileButton">Tambahkan Langkah Task Baru</string>
+    <string name="addTaskGroup">Tambahkan Task Group</string>
+    <string name="submitNewTaskGroup">Kumpulkan Task Group Baru</string>
+    <string name="steps">Langkah-Langkah</string>
+    <string name="submitTaskSteps">Kumpulkan Langkah Baru</string>
+    <string name="addTaskStep">Tambahkan Langkah</string>
+</resources>
