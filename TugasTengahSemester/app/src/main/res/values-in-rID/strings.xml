@@ -16,4 +16,23 @@
     <string name="steps">Langkah-Langkah</string>
     <string name="submitTaskSteps">Kumpulkan Langkah Baru</string>
     <string name="addTaskStep">Tambahkan Langkah</string>
+    <string name="RequestPermissions">Meminta Izin</string>
+    <string name="AkhirSemesterFeatures">Fitur Akhir</string>
+    <string name="whyText">Kenapa? Karena saya butuh akses file.</string>
+    <string name="placeholderStaticText">Tidak ada</string>
+    <string name="textC">Teks apapun</string>
+    <string name="editTextC">Taruh Teks apapun disini</string>
+    <string name="buttonGenerate">Buat</string>
+    <string name="_0">0</string>
+    <string name="exit">Keluar</string>
+    <string name="timer_value">0</string>
+    <string name="start">Mulai</string>
+    <string name="Relax">Relakasi</string>
+    <string name="seriousMode">Waktu Serius</string>
+    <string name="taskTimer">Pengukur Waktu</string>
+    <string name="titleSerious">Mode Serius</string>
+    <string name="messageSerious">Matikan koneksi jaringan jika ingin memasuki Mode Serius</string>
+    <string name="okSerious">Baiklah, saya akan mematikannya</string>
+    <string name="permissionGranted">Izin DIBERIKAN</string>
+    <string name="permissionNotGranted">Izin Tidak Diberikan</string>
 </resources>

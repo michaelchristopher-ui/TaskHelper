@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -19,14 +18,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import id.ac.ui.cs.mobileprogramming.michaelchristophermanullang.tugastengahsemester.R;
+import id.ac.ui.cs.mobileprogramming.michaelchristophermanullang.tugastengahsemester.fragment.StopwatchFragment;
 import id.ac.ui.cs.mobileprogramming.michaelchristophermanullang.tugastengahsemester.broadcastreceiver.MyReceiver;
 import id.ac.ui.cs.mobileprogramming.michaelchristophermanullang.tugastengahsemester.fragment.AddTaskFragment;
 import id.ac.ui.cs.mobileprogramming.michaelchristophermanullang.tugastengahsemester.fragment.AddTaskGroupFragment;
 import id.ac.ui.cs.mobileprogramming.michaelchristophermanullang.tugastengahsemester.fragment.AddTaskStepsFragment;
+import id.ac.ui.cs.mobileprogramming.michaelchristophermanullang.tugastengahsemester.fragment.AkhirSemesterFragment;
 import id.ac.ui.cs.mobileprogramming.michaelchristophermanullang.tugastengahsemester.fragment.ListOfTaskGroupsFragment;
 import id.ac.ui.cs.mobileprogramming.michaelchristophermanullang.tugastengahsemester.fragment.TaskFragment;
 import id.ac.ui.cs.mobileprogramming.michaelchristophermanullang.tugastengahsemester.fragment.TaskGroupFragment;
-import id.ac.ui.cs.mobileprogramming.michaelchristophermanullang.tugastengahsemester.service.AddTaskGroupService;
 import id.ac.ui.cs.mobileprogramming.michaelchristophermanullang.tugastengahsemester.viewmodel.MainViewModel;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,11 +34,17 @@ public class MainActivity extends AppCompatActivity {
     MainViewModel mainViewModel;
     List<Fragment> fragments;
 
+    static {
+        System.loadLibrary("cpp_code");
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Agar Alert Dapat Bekerja
+        //ActivityCompat.requestPermissions(this, new String[]{FOREGROUND_SERVICE}, PackageManager.PERMISSION_GRANTED);
 
         //Create and insertion of fragments into a fragment list
         fragments = new ArrayList<Fragment>();
@@ -48,12 +54,14 @@ public class MainActivity extends AppCompatActivity {
         fragments.add(new AddTaskStepsFragment()); //3
         fragments.add(new AddTaskFragment()); //4
         fragments.add(new AddTaskGroupFragment()); //5
+        fragments.add(new AkhirSemesterFragment()); //6
+        fragments.add(new StopwatchFragment());//7
+
+
 
         replaceFragment(0);
 
         Context contextMain = getApplicationContext();
-
-
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -79,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
         t1.start();
 
         IntentFilter filter = new IntentFilter();
@@ -105,7 +114,12 @@ public class MainActivity extends AppCompatActivity {
         return fragments.get(index);
     }
 
-
-
-
+    public void startup(Intent intent){
+        try {
+            startService(intent);
+            Log.d("start", "start");
+        } catch (Exception e){
+            Log.d("exception", e.toString());
+        }
+    }
 }

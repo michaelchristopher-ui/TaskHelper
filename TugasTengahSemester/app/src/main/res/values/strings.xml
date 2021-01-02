@@ -15,4 +15,23 @@
     <string name="steps">Steps</string>
     <string name="submitTaskSteps">Submit Task Step</string>
     <string name="addTaskStep">Add Task Step</string>
+    <string name="RequestPermissions">Request Permissions</string>
+    <string name="AkhirSemesterFeatures">Akhir Features</string>
+    <string name="whyText">Why, because I cannot access it if i dont have permission.</string>
+    <string name="placeholderStaticText">None Yet</string>
+    <string name="textC">Any Text</string>
+    <string name="editTextC">Put Any Here</string>
+    <string name="buttonGenerate">Generate</string>
+    <string name="_0" >0</string>
+    <string name="exit" >Exit</string>
+    <string name="timer_value" >0</string>
+    <string name="start" >Start</string>
+    <string name="Relax" >Relax</string>
+    <string name="seriousMode" >Serious Mode</string>
+    <string name="taskTimer" >Task Timer</string>
+    <string name="titleSerious">Serious Mode</string>
+    <string name="messageSerious">Disable your network connectivity in order to enter Serious Mode</string>
+    <string name="okSerious">Sure, I will disable it</string>
+    <string name="permissionGranted">Permission GRANTED</string>
+    <string name="permissionNotGranted">Permission Not Granted</string>
 </resources>
